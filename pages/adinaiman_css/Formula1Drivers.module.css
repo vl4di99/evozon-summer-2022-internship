@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Formula1Regular";
+    src: url(../../fonts/Formula1-Regular.ttf)
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__title{
+    display: flex;
+    align-self: center;
+    font-family: "Formula1Regular";
+    font-size: 30px;
+    margin:1rem;
+    background-color: #e10600;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px #888888;
+}
+
+.wrapper__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}

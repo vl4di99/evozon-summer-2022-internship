@@ -1,0 +1,72 @@
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../images/encryption_BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+}
+
+.maincontainer__title{
+    border-bottom: 5px solid gainsboro;
+    border-right: 5px solid gainsboro;
+    border-radius: 1rem;
+    border-top: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    padding: 1rem;
+}
+
+.maincontainer__encryption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid darksalmon;
+    border-radius: 30px;
+    width: 20rem;
+    padding: 2vw;
+    margin: 1vw;
+}
+
+.maincontainer__decryption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid darksalmon;
+    border-radius: 30px;
+    width: 20rem;
+    padding: 2vw;
+    margin: 1vw;
+}
+
+.maincontainer__encryption__button{
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+    margin: 10px;
+    width: 5vw;
+    height: 3vh;
+    background-color: bisque;
+}
+
+.maincontainer__encryption__button:hover{
+    background-color: darksalmon;
+    cursor: pointer;
+}
+
+.maincontainer__decryption__button{
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+    margin: 10px;
+    width: 5vw;
+    height: 3vh;
+    background-color: bisque;
+}
+
+.maincontainer__decryption__button:hover{
+    background-color: darksalmon;
+    cursor: pointer;
+}
