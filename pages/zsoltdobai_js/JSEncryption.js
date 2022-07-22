@@ -135,7 +135,7 @@ function JSEncryption() {
         </div>
         <div>
           <h4>Your encrypted message:</h4>
-          <input type="text" value={encrypted} readonly />
+          <input type="text" value={encrypted} readOnly />
         </div>
       </div>
 
@@ -159,7 +159,7 @@ function JSEncryption() {
         </div>
         <div>
           <h4>Your decrypted message:</h4>
-          <input type="text" value={decrypted} readonly />
+          <input type="text" value={decrypted} readOnly />
         </div>
       </div>
     </div>
