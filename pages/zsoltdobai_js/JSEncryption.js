@@ -113,7 +113,7 @@ function JSEncryption() {
     <div className={styles.maincontainer}>
       <NavigationMenu style={{ display: "flex", alignSelf: "flex-start" }} />
       <div className={styles.maincontainer__title}>
-        <h1>Let's get ready to encrypt your data!</h1>
+        <h1>Get ready to encrypt your data!</h1>
       </div>
       <div className={styles.maincontainer__encryption}>
         <h2>Encrypt Data</h2>
