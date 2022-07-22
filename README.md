@@ -1,7 +1,12 @@
 The first step to be able to run the project is to use
-```npm install
+```
+npm install
+```
 After, the project can be run, by using 
-```npm run dev
+```
+npm run dev
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
