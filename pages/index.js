@@ -21,12 +21,12 @@ export default function Home() {
         />
       </div>
       <div className={styles.container__cssadi}>
-        <Link href="/adinaiman_css/Formula1Drivers">
+        <Link href="/formula1_css/Formula1Drivers">
           <div>Go To Formula 1 Drivers Page</div>
         </Link>
       </div>
       <div className={styles.container__jszsolt}>
-        <Link href="/zsoltdobai_js/JSEncryption">
+        <Link href="/encrypt_decrypt_js/JSEncryption">
           <div>Go To JSEncryption</div>
         </Link>
       </div>

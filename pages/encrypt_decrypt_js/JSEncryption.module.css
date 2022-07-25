@@ -19,6 +19,8 @@
     border-top: 1px solid gainsboro;
     border-left: 1px solid gainsboro;
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .maincontainer__encryption{

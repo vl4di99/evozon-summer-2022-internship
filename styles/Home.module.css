@@ -22,7 +22,7 @@
     margin: 0.5rem;
 }
 
-.container__cssadi{
+.container__cssf1{
     font-family: "JosefinSansRegular";
     font-size: 25px;
     margin: 1rem;
@@ -33,14 +33,14 @@
     transition: .5s;
 }
 
-.container__cssadi:hover{
+.container__cssf1:hover{
     background-color:lightcoral;
     color: darkslateblue;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.container__jszsolt{
+.container__jsenc{
     font-family: "JosefinSansRegular";
     font-size: 25px;
     margin: 1rem;
@@ -51,7 +51,7 @@
     transition: .5s;
 }
 
-.container__jszsolt:hover{
+.container__jsenc:hover{
     background-color:lightcoral;
     color: darkslateblue;
     transform: scale(1.1);
