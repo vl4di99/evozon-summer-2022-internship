@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Josefin";
+    src: url(../../fonts/JosefinSans-Regular.ttf);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255,255,255);
+    background: #ecf0f3;
+    min-height: 100vh;
+}
+
+.container__button{
+    transition: transform .7s ease-in-out;
+    padding: 1.5em;
+    font-size: 2em;
+    border: none;
+    border-radius: 2em;
+    color: midnightblue;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: -2px -2px 5px #fff, 2px 2px 5px #d1d9e6;
+    box-shadow: -18px -18px 30px #fff, 18px 18px 30px #d1d9e6, inset 0 0 0 transparent, inset  0 0 0 transparent;
+    transition: all 0.3s ease-out;
+}
+
+.container__button:active{
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset -18px -18px 30px #fff, inset 18px 18px 30px #d1d9e6;
+}
+
+.container__button:hover{
+    cursor: pointer;
+    box-shadow: -18px -18px 30px coral, 18px 18px 30px coral, inset 0 0 0 transparent, inset  0 0 0 transparent;
+}
+
+.container__text{
+    font-family: "Josefin";
+    font-size: 2em;
+}

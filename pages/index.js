@@ -30,6 +30,11 @@ export default function Home() {
           <div>Go To JSEncryption</div>
         </Link>
       </div>
+      <div className={styles.container__jsGyved}>
+        <Link href="/gyved_js/GyvedBehaviour">
+          <div>Go To Gyved Behaviour</div>
+        </Link>
+      </div>
     </div>
   );
 }

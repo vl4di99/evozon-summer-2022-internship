@@ -22,7 +22,7 @@
     margin: 0.5rem;
 }
 
-.container__cssf1{
+.container__cssf1, .container__jsenc, .container__jsGyved{
     font-family: "JosefinSansRegular";
     font-size: 25px;
     margin: 1rem;
@@ -33,25 +33,7 @@
     transition: .5s;
 }
 
-.container__cssf1:hover{
-    background-color:lightcoral;
-    color: darkslateblue;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.container__jsenc{
-    font-family: "JosefinSansRegular";
-    font-size: 25px;
-    margin: 1rem;
-    background-color:antiquewhite;
-    padding: 1.2rem;
-    border-radius: 1rem;
-    text-decoration: none;
-    transition: .5s;
-}
-
-.container__jsenc:hover{
+.container__cssf1:hover,.container__jsenc:hover,.container__jsGyved:hover{
     background-color:lightcoral;
     color: darkslateblue;
     transform: scale(1.1);
