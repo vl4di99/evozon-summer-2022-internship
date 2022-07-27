@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Josefin";
+    src: url(../../../fonts/JosefinSans-Regular.ttf);
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	25% {
+		background-position: 200% 0;
+	}
+    50% {
+		background-position: 400% 0;
+	}
+    75% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.95);
+    font-family: "Josefin";
+    overflow: hidden;
+}
+
+.container__iframe{
+    width:  100%;
+    height: 100%;
+    z-index:2;
+    position: relative;
+}
+
+.container__hasAccess{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.container__hasAccess:before, .container__hasAccess:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: 1;
+	animation: steam 100s linear infinite;
+}
+
+.container__hasAccess:after{
+    filter: blur(50px);
+}
+
+
+.container__noAccess{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__keyField{
+    width: 100%;
+    height: 3vh;
+    border-radius: 1em;
+    padding: 0.5em;
+    border: 0.2em solid #dadada;
+    font-family: "Josefin";
+    font-size: 1.3em;
+    margin: 10%;
+}
+
+.container__keyField:hover{
+    outline:none;
+    border-color:#0b78d1;
+    box-shadow:0 0 5em #0b78d1;
+}
+
+.container__keyField:focus{
+    outline:none;
+    border-color:#005397;
+    box-shadow:0 0 3em #005397;
+}
+
+.container__submit{
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1.3em;
+    width: 10em;
+    background-color: #171827;
+    color: #F6F8FF;
+    box-shadow: rgba(#00093D, .12);
+    border: none;
+    transition: transform .2s, background .4s;
+    
+}
+
+.container__submit:hover{
+    cursor: pointer;
+    background-color: #005397;
+    border: none;
+}
+
+.container__submit:active{
+    transform: scale(.85) translateZ(0);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
