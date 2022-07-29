@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.container__RawDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+
+}
+
+.container__RawDiv__Image{
+    display: block;
+    width: 15vw;
+    height: 15vw;
+}
+
+.container__RawDiv__AsciiChars{
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.container__RawDiv__RGBA{
+    width: 30%;
+    word-wrap: break-word;
+}

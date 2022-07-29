@@ -1,23 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./DriverCard.module.css";
 import Image from "next/image";
+import plus_sign from "../../images/plus-sign.png";
+import minus_sign from "../../images/minus-sign.png";
 
 function DriverCard(props) {
+  const [hovering, setHovering] = useState(false);
+  const [points, setPoints] = useState(props.points);
+
+  const changePointsPlus = () => {
+    setPoints(points + 1);
+  };
+
+  const changePointsMinus = () => {
+    setPoints(points - 1);
+  };
+
+  const onMouseEnterFcn = () => {
+    setHovering(true);
+  };
+
+  const onMouseLeaveFcn = () => {
+    setHovering(false);
+  };
   return (
     <div
       className={styles.maincard}
       style={{
-        borderTop: `2px solid ${props.color}`,
-        borderRight: `2px solid ${props.color}`,
+        borderTop: hovering ? `2px solid ${props.color}` : "2px solid black",
+        borderRight: hovering ? `2px solid ${props.color}` : "2px solid black",
         borderTopRightRadius: "10px",
         padding: "10px",
       }}
+      onMouseEnter={onMouseEnterFcn}
+      onMouseLeave={onMouseLeaveFcn}
     >
       <div className={styles.maincard__header}>
         <div className={styles.maincard__header__place}>{props.place}</div>
         <div className={styles.maincard__header__points}>
           <div className={styles.maincard__header__points__number}>
-            {props.points}
+            {points}
           </div>
           <div className={styles.maincard__header__points__label}>PTS</div>
         </div>
@@ -25,7 +47,7 @@ function DriverCard(props) {
       <div
         className={styles.maincard__center}
         style={{
-          borderLeft: `4px solid ${props.color}`,
+          borderLeft: hovering ? `4px solid ${props.color}` : "2px solid black",
           padding: "10px",
           borderRadius: "2rem",
           margin: "0.3rem",
@@ -59,6 +81,20 @@ function DriverCard(props) {
           height="200px"
           style={styles.profileImage}
         />
+      </div>
+      <div className={styles.maincard__pointsFooter}>
+        <span
+          onClick={() => changePointsPlus()}
+          className={styles.maincard__pointsFooter__plus}
+        >
+          <Image src={plus_sign} alt="+" width="30px" height="30px" />
+        </span>
+        <span
+          onClick={() => changePointsMinus()}
+          className={styles.maincard__pointsFooter__minus}
+        >
+          <Image src={minus_sign} alt="-" width="30px" height="10px" />
+        </span>
       </div>
     </div>
   );

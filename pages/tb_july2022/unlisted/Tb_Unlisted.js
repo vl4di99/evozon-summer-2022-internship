@@ -11,7 +11,7 @@ function Tb_Unlisted() {
   const access = (e) => {
     e.preventDefault();
     const hashed = md5(keyRef.current.value);
-    const hashedSecret = md5(process.env.NEXT_PUBLIC_YOUTUBE_KEY);
+    const hashedSecret = process.env.NEXT_PUBLIC_YOUTUBE_KEY;
     if (hashedSecret === hashed) {
       setEmbedId(process.env.NEXT_PUBLIC_YOUTUBE_ID);
       setHasAccess(true);

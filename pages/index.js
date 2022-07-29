@@ -40,6 +40,13 @@ export default function Home() {
           <div>Surprise</div>
         </Link>
       </div>
+      {/*
+      <div className={styles.container__wch2021}>
+        <Link href="/winterChallenge2021/WChallenge2021">
+          <div>Winter Challenge 2021</div>
+        </Link>
+      </div>
+        */}
     </div>
   );
 }

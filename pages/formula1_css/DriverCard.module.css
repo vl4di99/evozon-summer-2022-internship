@@ -95,3 +95,28 @@
     display: block;
     background-image: url("https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x1.png");
 }
+
+.maincard__pointsFooter{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    align-items: center;
+    
+}
+
+.maincard__pointsFooter__plus{
+    transition: transform .2s;
+}
+
+.maincard__pointsFooter__plus:active{
+    transform: scale(0.8);
+}
+
+
+.maincard__pointsFooter__minus{
+    transition: transform .2s;
+}
+
+.maincard__pointsFooter__minus:active{
+    transform: scale(0.8);
+}
