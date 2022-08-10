@@ -47,6 +47,11 @@ export default function Home() {
         </Link>
       </div>
         */}
+      <div className={styles.container__stateMgmt}>
+        <Link href="/stateManagement/incrementDecrementPage">
+          <div>State Management</div>
+        </Link>
+      </div>
     </div>
   );
 }

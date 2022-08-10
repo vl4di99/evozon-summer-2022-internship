@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Fira sans', sans-serif;
+    background: url(../../images/wood2.webp);
+    background-size: auto;
+}
+
+.container__counter{
+    background: #021331;
+    padding: 1rem;
+	border-radius: 1rem;
+	color: white;
+}
+
+.container__counter__count{
+    font-size: 4em;
+    text-align: center;
+}
+
+.container__counter__control{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 -1rem;
+}
+
+.container__counter__control__button{
+    appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+
+	margin: 0 1rem;
+
+	color: #fa286e;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+}
+
+.container__counter__control__button:hover{
+    color: greenyellow;
+    transform: scale(1.1)
+}
