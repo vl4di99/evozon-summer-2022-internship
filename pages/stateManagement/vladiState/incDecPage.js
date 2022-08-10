@@ -1,6 +1,5 @@
 import React from "react";
 import { useVladiValue, useVladiState } from "../../../hooks/vladiState";
-import { useRouter } from "next/router";
 import styles from "../../../styles/Home.module.css";
 
 function IncDecPage() {

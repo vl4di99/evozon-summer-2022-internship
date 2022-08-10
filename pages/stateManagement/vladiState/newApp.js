@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { AppContextRoot } from "./appContext";
 import IncrementDecrementPage from "../incrementDecrementPage";
 
@@ -10,4 +10,4 @@ function newApp() {
   );
 }
 
-export default newApp;
+export default newApp;*/
