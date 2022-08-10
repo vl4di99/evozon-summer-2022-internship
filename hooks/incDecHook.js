@@ -6,17 +6,18 @@ import {
 
 function incDecHook() {
   const [val, setVal] = useState(null);
-
-  useEffect(() => {
-    //window.localStorage.clear();
-    const oldValue = window.localStorage.getItem("Counter");
-    console.log(oldValue);
+  const getLocalData = async () => {
+    const oldValue = await window.localStorage.getItem("Counter");
     if (oldValue === null) {
       setVal(0);
-      save();
+      await save();
     } else {
       setVal(parseInt(oldValue));
     }
+  };
+
+  useEffect(() => {
+    getLocalData();
   }, []);
 
   const plus = () => {
