@@ -65,3 +65,7 @@ export function vladiUnsub(data) {
   delete singleSubscribers[data];
   return;
 }
+
+export default function DefFunc() {
+  return null;
+}
