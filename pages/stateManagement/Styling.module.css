@@ -6,8 +6,8 @@
     min-height: 100vh;
     overflow: hidden;
     font-family: 'Fira sans', sans-serif;
-    background: url(../../images/wood2.webp);
-    background-size: auto;
+    background: url(../../images/wood3.webp);
+    background-size: cover;
 }
 
 .container__counter{
