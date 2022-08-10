@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   writeSub,
   readSub,
@@ -6,17 +6,22 @@ import {
 
 function incDecHook() {
   const [val, setVal] = useState(null);
+
   const getLocalData = async () => {
-    const oldValue = await window.localStorage.getItem("Counter");
-    if (oldValue === null) {
-      setVal(0);
-      await save();
+    if (typeof window !== "undefined") {
+      const oldValue = await window.localStorage.getItem("Counter");
+      if (oldValue === null) {
+        setVal(0);
+      } else {
+        setVal(parseInt(oldValue));
+      }
     } else {
-      setVal(parseInt(oldValue));
+      setVal(0);
     }
   };
 
   useEffect(() => {
+    //window.localStorage.clear();
     getLocalData();
   }, []);
 

@@ -5,8 +5,6 @@ import {
 } from "../pages/stateManagement/publishSubscribeUnsubscribe";
 import { useRouter } from "next/router";
 
-const router = useRouter();
-
 function useVladiValue(data) {
   vladiPub(data);
 }
@@ -27,10 +25,5 @@ export function useVladiState(data) {
     twoStates[0] = data;
   }
   console.log("Subscribed", twoStates);
-  reRenderDOM();
   return twoStates;
-}
-
-function reRenderDOM() {
-  router.reload();
 }
